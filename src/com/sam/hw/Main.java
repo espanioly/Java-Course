@@ -12,7 +12,9 @@ public class Main {
         for(Item i : store){
             System.out.println(i);
             i.broken();
-        } for(Item i : store) {
+        }
+        System.out.println("OH NO!!! AN EARTHQUAKE!!!");
+        for(Item i : store) {
             System.out.println(i);
         }
     }
