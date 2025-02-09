@@ -10,6 +10,6 @@ public class Print {
     public static void printf(String string, Object... args) {
         System.out.printf(string, args);
     }
-    public static void printe(String string){System.err.print(string);}
-    public static void printeln(String string){System.err.println(string);}
+    public static void printE(String string){System.err.print(string);}
+    public static void printEln(String string){System.err.println(string);}
 }
