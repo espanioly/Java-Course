@@ -7,7 +7,7 @@ import java.util.Scanner;
 import static com.sam.e.Print.*;
 
 public class Speedy2 implements Runnable {
-    private static int ID = 0; // Unique ID
+    private static int ID = 1; // Unique ID
     String name = ""; // Name of the horse + ID
     private static int pos = 1; // Positions of horse at the finish line
     public int finalPos; // Finish Position per Horse
@@ -128,6 +128,11 @@ public class Speedy2 implements Runnable {
         for (int i = 0 ; i < posToShow; i++){
             println(finalPositions.get(i).strPos + ": " + finalPositions.get(i).name);
         }
+        //Resets Static values
+        positions.clear();
+        finalPositions.clear();
+        pos = 1;
+        ID = 1;
     }
 
     public static void main(String[] args) {
